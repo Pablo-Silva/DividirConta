@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Valor da conta"
-        android:inputType="textPersonName|numberSigned" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/pessoasText"
@@ -24,10 +24,27 @@
         android:hint="Numero de pessoas"
         android:inputType="number" />
 
+    <CheckBox
+        android:id="@+id/checkPorcento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10% de acrecimo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
     <Button
-        android:onClick="calcular"
         android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#65aeee"
+        android:onClick="calcular"
         android:text="Calcular" />
 </LinearLayout>
